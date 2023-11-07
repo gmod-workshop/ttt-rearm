@@ -28,7 +28,7 @@ if CLIENT then
         local tttrsdh11 = xlib.makecheckbox{label = 'ttt_rearm_enabled (def. 1)', repconvar = 'rep_ttt_rearm_enabled', parent = tttrslst1}
         tttrslst1:AddItem(tttrsdh11)
 
-        xlib.hookEvent('onProcessModules', nil, tttrspnl.processModules)
+        xgui.hookEvent('onProcessModules', nil, tttrspnl.processModules)
         xgui.addSubModule('Rearm', tttrspnl, nil, panel)
     end)
 end
